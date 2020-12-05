@@ -2,7 +2,7 @@ pipeline {
   agent any
   options {
     // Keep 10 most recent build
-    buildDiscarder(logRotatior(numToKeepStr:'10'))
+    buildDiscarder(logRotator(numToKeepStr:'10'))
   }
   stages{
     stage('Install') {
